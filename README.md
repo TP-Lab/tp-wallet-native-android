@@ -17,18 +17,19 @@ allprojects {
 2.在app下的build.gradle中添加:
 ```
 dependencies {
-    implementation 'com.github.TP-Lab:tp-wallet-android:1.0.1'
+    implementation 'com.github.TP-Lab:tp-wallet-native-android:0.0.1'
 }
 ```
 
 
 ## 使用
+
 目前支持以下操作：
 1. **transfer**: 拉起TP钱包转账，类似微信、支付宝转账;
 2. **pushTransaction**: push action 进行交易;
 3. **authLogin**: 授权登陆.
 
-##### TP钱包的回调
+### TP钱包的回调
 调起TP钱包后，如需要监听结果，可使用TPListener监听回调：
 ```
 new TPListener() {
@@ -49,7 +50,8 @@ new TPListener() {
 }
 ```
 
-#### 一. Transfer
+## 一. Transfer
+
 使用示例
 ```
 TPManager.getInstance().transfer(MainActivity.this, getTransferData(), new TPListener() {
@@ -92,7 +94,8 @@ Transfer Data示例(详情见TP钱包协议)
 }
 ```
 
-#### 二. pushTransaction
+## 二. pushTransaction
+
 使用示例
 ```
 TPManager.getInstance().pushTransaction(MainActivity.this, getPushTransactionData(), new TPListener() {
@@ -138,7 +141,8 @@ pushTransaction Data示例(详情见TP钱包协议)
 }
 ```
 
-#### 三. authLogin
+## 三. authLogin
+
 使用示例
 ```
 TPManager.getInstance().authLogin(MainActivity.this, getAuthLogin(), new TPListener() {
