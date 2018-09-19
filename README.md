@@ -185,7 +185,6 @@ authLogin 成功后的回调示例
     "result": 0,
     "actionId": "",
     "action": "",
-    "txID":"",
     "ref": "TokenPocket"
 }
 ```
