@@ -182,11 +182,10 @@ authLogin Data示例(详情见TP钱包协议)
 authLogin 成功后的回调示例
 ```
 {
-    "protocol": "",
-    "version": "",
     "result": 0,
     "actionId": "",
     "action": "",
+    "txID":"",
     "ref": "TokenPocket"
 }
 ```
